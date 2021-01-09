@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="192.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="170.0" fitWidth="177.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="openAlbumButton" layoutX="361.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleOpenAlbumButton" prefHeight="27.0" prefWidth="109.0" text="Open Album" />
+      <Button fx:id="deleteButton" layoutX="378.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleDeleteButton" prefHeight="27.0" prefWidth="74.0" text="Delete" />
+      <Button fx:id="renameButton" layoutX="378.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleRenameButton" prefHeight="27.0" prefWidth="74.0" text="Rename" />
+      <Text layoutX="205.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <Text layoutX="206.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos: " />
+      <Text layoutX="205.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Range:" />
+      <Label fx:id="nameLabel" layoutX="246.0" layoutY="22.0" text="nameLabel" />
+      <Label fx:id="photosLabel" layoutX="256.0" layoutY="47.0" text="photosLabel" />
+      <Label fx:id="dateRangeLabel" layoutX="220.0" layoutY="95.0" text="dateRange" />
+   </children>
+</AnchorPane>

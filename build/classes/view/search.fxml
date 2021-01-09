@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="966.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchController">
+   <children>
+      <Button fx:id="logoutButton" layoutX="831.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleLogoutButton" text="Logout" />
+      <Button fx:id="quitButton" layoutX="902.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleQuitButton" text="Quit" />
+      <Text layoutX="43.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of photos:" wrappingWidth="220.53936767578125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameField1" layoutX="85.0" layoutY="201.0" />
+      <Text fx:id="tagSearchText" layoutX="43.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Search" wrappingWidth="84.53939819335938">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="datePickerStart" layoutX="41.0" layoutY="205.0" prefHeight="27.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePickerEnd" layoutX="214.0" layoutY="205.0" prefHeight="27.0" prefWidth="150.0" />
+      <Text fx:id="dateDash" layoutX="198.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="filterByDateText" layoutX="41.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter by Date" />
+      <Button fx:id="searchButton" layoutX="550.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleSearchButton" text="Search" />
+      <Label fx:id="albumNameLabel" layoutX="382.0" layoutY="48.0" text="Search Results">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="photoNumLabel" layoutX="226.0" layoutY="92.0" text="photoNumLabel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="39.0" layoutY="318.0" prefHeight="571.0" prefWidth="889.0" />
+      <Button fx:id="allAlbumsButton" layoutX="27.0" layoutY="28.0" mnemonicParsing="false" onAction="#handleAllAlbumsButton" text="All Albums" />
+      <Button fx:id="clearSearchButton" layoutX="41.0" layoutY="911.0" mnemonicParsing="false" onAction="#handleClearSearchButton" text="Clear Search" />
+      <Button fx:id="resultsAlbumButton" layoutX="773.0" layoutY="911.0" mnemonicParsing="false" onAction="#handleResultsAlbumButton" text="New Album From Results" />
+      <Text fx:id="tagNameText1" layoutX="43.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="41.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="tagValueText1" layoutX="43.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" wrappingWidth="41.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="valueField1" layoutX="85.0" layoutY="243.0" />
+      <RadioButton fx:id="andRadio" layoutX="262.0" layoutY="207.0" mnemonicParsing="false" text="AND">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup3" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="orRadio" layoutX="262.0" layoutY="238.0" mnemonicParsing="false" text="OR" toggleGroup="$toggleGroup3" />
+      <RadioButton fx:id="oneTagRadio" layoutX="62.0" layoutY="288.0" mnemonicParsing="false" text="One Tag">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup2" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="twoTagRadio" layoutX="154.0" layoutY="288.0" mnemonicParsing="false" text="Two Tags" toggleGroup="$toggleGroup2" />
+      <TextField fx:id="nameField2" layoutX="365.0" layoutY="202.0" />
+      <Text fx:id="tagNameText2" layoutX="323.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="41.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="tagValueText2" layoutX="323.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" wrappingWidth="41.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="valueField2" layoutX="365.0" layoutY="242.0" />
+      <Text layoutX="40.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search By" wrappingWidth="84.53939819335938">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="tagRadio" layoutX="108.0" layoutY="148.0" mnemonicParsing="false" selected="true" text="Tags">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="dateRadio" layoutX="166.0" layoutY="148.0" mnemonicParsing="false" text="Dates" toggleGroup="$toggleGroup1" />
+      <Button fx:id="clearSearchButton" layoutX="622.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleClearSearchButton" text="Clear Search" />
+      <Button fx:id="resultsAlbumButton" layoutX="756.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleResultsAlbumButton" text="New Album From Results" />
+   </children>
+</AnchorPane>

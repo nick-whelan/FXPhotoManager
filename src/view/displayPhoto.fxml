@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DisplayPhotoController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="373.0" fitWidth="592.0" layoutX="93.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../jblum.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="closeButton" layoutX="693.0" layoutY="591.0" mnemonicParsing="false" onAction="#handleCloseButton" text="Close" />
+      <Button fx:id="rightButton" layoutX="702.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleRightButton" text="-&gt;" />
+      <Button fx:id="leftButton" layoutX="39.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleLeftButton" text="&lt;-" />
+      <Text layoutX="389.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption: " wrappingWidth="175.20458984375" />
+      <Text layoutX="39.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags:" wrappingWidth="175.20458984375" />
+      <Button fx:id="editCaptionButton" layoutX="660.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleEditCaptionButton" text="Edit Caption" />
+      <Button fx:id="editTagButton" layoutX="293.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleEditTagButton" text="Edit Tags" />
+      <Label fx:id="captionLabel" alignment="TOP_LEFT" layoutX="385.0" layoutY="443.0" prefHeight="141.0" prefWidth="368.0" text="captionLabel" wrapText="true" />
+      <Label fx:id="dateLabel" layoutX="86.0" layoutY="415.0" text="dateLabel" />
+      <Text layoutX="46.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="49.5" />
+      <ListView fx:id="tagListView" layoutX="86.0" layoutY="453.0" prefHeight="179.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

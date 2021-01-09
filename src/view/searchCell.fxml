@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="200.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+         </image>
+      </ImageView>
+      <Text layoutX="522.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" />
+      <Text layoutX="221.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" />
+      <Text layoutX="338.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tags:" />
+      <Label fx:id="dateLabel" layoutX="254.0" layoutY="22.0" prefHeight="17.0" prefWidth="74.0" text="DateRangelabel" />
+      <Label fx:id="captionLabel" alignment="TOP_LEFT" layoutX="518.0" layoutY="40.0" prefHeight="114.0" prefWidth="229.0" text="captionLabel" wrapText="true" />
+      <ListView fx:id="tagListView" layoutX="339.0" layoutY="40.0" prefHeight="114.0" prefWidth="152.0" />
+   </children>
+</AnchorPane>

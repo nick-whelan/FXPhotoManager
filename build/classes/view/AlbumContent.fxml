@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="893.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlbumContentController">
+   <children>
+      <Button fx:id="logoutButton" layoutX="831.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleLogoutButton" text="Logout" />
+      <Button fx:id="quitButton" layoutX="902.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleQuitButton" text="Quit" />
+      <Button fx:id="addPhotoButton" layoutX="834.0" layoutY="833.0" mnemonicParsing="false" onAction="#handleAddPhotoButton" text="Add Photo" />
+      <Text layoutX="32.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date range:" wrappingWidth="115.299560546875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of photos:" wrappingWidth="185.53936767578125">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="albumNameLabel" layoutX="437.0" layoutY="48.0" text="name">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateRangeLabel" layoutX="150.0" layoutY="140.0" text="Daterangelabel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="photoNumLabel" layoutX="219.0" layoutY="164.0" text="photoNumLabel">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="39.0" layoutY="222.0" prefHeight="582.0" prefWidth="889.0" />
+      <Button fx:id="allAlbumsButton" layoutX="27.0" layoutY="28.0" mnemonicParsing="false" onAction="#handleAllAlbumsButton" text="All Albums" />
+      <Button fx:id="displayPhotoButton" layoutX="38.0" layoutY="833.0" mnemonicParsing="false" onAction="#handleDisplayPhotoButton" text="Display Photo" />
+   </children>
+</AnchorPane>
