@@ -11,13 +11,13 @@ A JavaFX application to manage several users photo albums.
 
 # Screenshots
 
+### Album View
 ![In Album Screen](https://i.imgur.com/dbdvuvy.png)
 
+### Main Albums Screen
 ![Album Screen](https://i.imgur.com/iSWVvZJ.png)
 
+### Search Screen
 ![Search Screen](https://i.imgur.com/CMnELuu.png)
-
-![Admin Panel](https://i.imgur.com/8HZLllB.png)
-
 
 
